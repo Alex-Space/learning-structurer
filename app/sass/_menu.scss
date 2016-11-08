@@ -1,0 +1,44 @@
+.contextmenu ul {
+    list-style: none;
+}
+
+.transparent-substrate {
+    position: fixed;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.jstree-nav {
+    min-width: 180px;
+    border-right: 1px solid #282828;
+    padding: 10px;
+}
+
+.contextmenu-list {
+    position: absolute;
+    background: #1d1d1d;
+    list-style: none;
+    padding: 0;
+    border: 1px solid #ccc;
+}
+
+.contextmenu-list li {
+    padding: 5px 10px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.contextmenu-list li:first-of-type,
+.contextmenu-list li:last-of-type {
+    border-bottom: 0;
+    border-top: 0;
+}
+
+.contextmenu-list li:hover {
+    background: #8FA876;
+    color: #fff;
+    cursor: pointer;
+}

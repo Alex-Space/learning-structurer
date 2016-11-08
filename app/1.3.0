@@ -1,0 +1,7 @@
+
+> electron@1.4.5 postinstall /home/master/workspace/electron-empty/app/node_modules/electron
+> node install.js
+
+app@1.0.0 /home/master/workspace/electron-empty/app
+└── electron@1.4.5 
+
