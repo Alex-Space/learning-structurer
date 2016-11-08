@@ -1,0 +1,19 @@
+.app-icons-small {
+    width: 30px;
+    height: 30px;
+}
+
+.app-icons {
+    background-size: 100%;
+}
+
+.i-close {
+    background-image: url('../images/close.svg');
+}
+
+.rename-popup-inner i {
+    position: absolute;
+    top: -35px;
+    right: 0;
+    cursor: pointer;
+}

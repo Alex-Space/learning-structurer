@@ -1,5 +1,11 @@
 @import '_fonts.scss';
 @import '_menu.scss';
+@import '_icons.scss';
+
+::selection {
+  background: #8FA876;
+  color: #fff;
+}
 
 body,
 html {
@@ -29,4 +35,71 @@ a {
 .sidebar-title {
     margin: 0;
     padding: 10px 10px 0;
+}
+
+.dark-bg-popup {
+    position: fixed;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 10;
+}
+
+.rename-popup-inner {
+    position: fixed;
+    z-index: 15;
+    width: 280px;
+    height: 100px;
+    background: rgb(58, 58, 58);
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: -20%;
+    bottom: 0;
+    border: 2px solid rgba(0, 0, 0, 0.78);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.input-general {
+    padding: 10px;
+    font-size: 16px;
+    margin: 0 auto;
+    display: flex;
+    border-radius: 4px 0 0 4px;
+    border: 1px solid #151414;
+    outline: none;
+    background: #e6e6e6;
+    width: 152px;
+    margin-right: 73px;
+}
+
+.ok-btn {
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 38px;
+    background: #8FA876;
+    border: 0;
+    border-left: 1px solid #151414;
+    text-align: center;
+    line-height: 38px;
+    box-sizing: border-box;
+    right: 34px;
+    border-radius: 0 4px 4px 0;
+    color: #fff;
+    font-weight: bold;
+    padding-right: 5px;
+    padding-top: 1px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.ok-btn:hover {
+    background: #788e61;
 }
