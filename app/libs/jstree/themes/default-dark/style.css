@@ -1104,7 +1104,8 @@
   }
 }
 .jstree-default-dark {
-  background: #333;
+    background: #333;
+    border-right: 1px solid #2f2f2f;
 }
 .jstree-default-dark .jstree-anchor {
   color: #dadada;

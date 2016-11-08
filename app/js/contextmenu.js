@@ -23,8 +23,9 @@ jQuery(document).ready(function($) {
     });
 
     // Rename
-    $('.context-rename').on('click', function() {
+    $('body').on('click', '.context-rename', function() {
         const elemId = $(this).parents('nav').data('elem-id');
+        $('#'+elemId).html(document.getElementById(elemId).childNodes[0]).append('Привет');
     });
 
     // $('body').on('set_text.jstree', function() {
