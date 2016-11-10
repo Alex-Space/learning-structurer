@@ -8,9 +8,9 @@ jQuery(document).ready(function($) {
         $('body').append(`
             <nav data-elem-id="${elemId}" class="contextmenu">
                 <ul class="contextmenu-list" style="left: ${e.clientX}px; top: ${e.clientY-15}px;">
-                    <li class="context-new">New node</li>
+                    <li class="context-new">Create</li>
                     <li class="context-rename">Rename</li>
-                    <li class="context-remove">Remove</li>
+                    <li class="context-delete">Delete</li>
                 </ul>
             </nav>
         `);
@@ -58,11 +58,20 @@ jQuery(document).ready(function($) {
         $('.rename-popup').remove();
     });
 
+    // Close rename popup by "Escape" key
     document.addEventListener('keydown', event => {
-        if (event.key === 'Escape' || event.keyCode === 27) {
-            if ( $('.rename-popup').length > 0 ) {
+        if ( $('.rename-popup').length > 0 ) {
+            if (event.key === 'Escape' || event.keyCode === 27) {
                 $('.rename-popup').remove();
             }
         }
     });
+
+    // Delete
+    $('body').on('click', '.context-delete', function() {
+        const elemId = $(this).parents('nav').data('elem-id');
+        const mainLeaf = $('#'+elemId).parent('li');
+        mainLeaf.remove();
+    });
+
 });
